@@ -1,13 +1,13 @@
 {
-  "name": "egg-parameters",
+  "name": "@dengzhaofun/egg-parameters",
   "version": "0.1.0",
   "description": "Merge ctx.params, ctx.request.query, ctx.request.body into ctx.params\"",
   "main": "app.js",
   "eggPlugin": {
     "name": "parameters"
   },
-  "repository": "git@github.com:eggjs/egg-parameters.git",
-  "author": "Jason Lee <huacnlee@gmail.com>",
+  "repository": "git@github.com:dengzhaofun/egg-parameters.git",
+  "author": "dengzhao <dengzhaofun@qq.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -17,7 +17,7 @@
     "autod": "autod"
   },
   "dependencies": {
-    "underscore": "^1.9.0"
+    "lodash": "^4.17.11"
   },
   "devDependencies": {
     "egg": "next",

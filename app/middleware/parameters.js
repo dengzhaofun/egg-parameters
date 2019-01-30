@@ -1,7 +1,5 @@
 'use strict';
 
-const _ = require('underscore');
-
 module.exports = function() {
   return function* parameters(next) {
     const ctx = this;
@@ -26,9 +24,6 @@ module.exports = function() {
     params.permit = require('../../lib/strong_parameters');
 
     ctx._setParameters(params);
-
-    ctx.logger.info('[parameters]', _.omit(ctx.params, ...filterParameters));
-
     yield next;
   };
 };
